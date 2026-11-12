@@ -15,4 +15,4 @@
 | 3 | Nahya Sakira | 1710625058 | UI/UX Designer | Menentukan skema warna, mengatur tipografi, dan menyusun tata letak halaman yang responsif di styles.css. |
 | 4 | Muhammad Rafi Maulana | 1710625150 | UI/UX Designer | Memperindah desain kartu katalog produk, tampilan kotak formulir kalkulator, dan efek interaktif tombol. |
 | 5 | Brava Dimas Athallah | 1710625198 | Software Engineer (SE) | Membuat elemen formulir HTML kalkulator dan membuat fungsi JavaScript dasar untuk perkalian harga paket. |
-| 6 | Nadira Azzahra | [Isi NIM] | Software Engineer (SE) | Menambahkan logika percabangan kondisi (diskon) pada JavaScript dan menampilkan rincian harga ke layar web. |
+| 6 | Nadira Azzahra | 1710625142 | Software Engineer (SE) | Menambahkan logika percabangan kondisi (diskon) pada JavaScript dan menampilkan rincian harga ke layar web. |
