@@ -4,7 +4,7 @@
 **Tema Studi Kasus Bisnis:** Platform Penghubung Promosi Kreator Konten untuk Usaha Lokal
 
 **Tautan Aktif Website GitHub Pages:** 
-[Tempelkan link website GitHub Pages Anda di sini setelah aktif, misalnya: https://raihan.github.io/lokalreach/]
+https://ackbare.github.io/Tugas-kelompok-webdev-5/#calc-section
 
 ## Daftar Anggota Kelompok dan Pembagian Peran
 
