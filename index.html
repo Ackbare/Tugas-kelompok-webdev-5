@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LokalReach - Platform Promosi Kreator</title>
+    <!-- TUGAS UI/UX DESIGNER: Memastikan file styles.css terhubung -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header id="header-section" data-role="CEO">
+        <h1>LokalReach</h1>
+        <nav>
+            <a href="#hero-section">Beranda</a>
+            <a href="#catalog-section">Katalog</a>
+            <a href="#calc-section">Kalkulator</a>
+        </nav>
+    </header>
+
+    <section id="hero-section" data-role="PM">
+        <div class="hero-content">
+            <p class="hero-label">Platform Promosi Kreator untuk Usaha Lokal</p>
+            <h2>Kolaborasi Kreator, Promosi Lokal Lebih Maksimal</h2>
+            <p class="hero-description">
+                LokalReach membantu usaha lokal terhubung dengan kreator konten yang sesuai untuk menghasilkan promosi digital yang menarik, relevan, dan mudah dijangkau oleh calon pelanggan.
+            </p>
+            <ul class="hero-benefits">
+                <li>Pilihan kreator sesuai kebutuhan dan target usaha</li>
+                <li>Paket promosi fleksibel untuk berbagai skala bisnis</li>
+                <li>Proses kolaborasi lebih praktis dan terarah</li>
+            </ul>
+            <a href="#calc-section" class="cta-button">Hitung Biaya Promosi</a>
+        </div>
+    </section>
+
+    
+    <section id="catalog-section" data-role="PM">
+        <div class="section-heading">
+            <p class="section-label">Pilihan Paket</p>
+            <h2>Pilih Paket Promosi yang Sesuai</h2>
+            <p>Temukan paket kolaborasi kreator yang sesuai dengan kebutuhan promosi dan skala usaha lokalmu.</p>
+        </div>
+
+        <div class="catalog-container">
+            <!-- Paket 1 -->
+            <div class="catalog-card">
+                <h3>Paket Kreator Pemula</h3>
+                <p>Cocok untuk usaha lokal yang baru memulai promosi melalui kreator konten.</p>
+                <ul>
+                    <li>Promosi oleh kreator pemula</li>
+                    <li>Konten sederhana dan informatif</li>
+                    <li>Cocok untuk mengenalkan produk</li>
+                </ul>
+                <p class="price">Rp150.000 / unggahan</p>
+                <p class="promo-info">Gunakan kode <strong>LOKAL10</strong> untuk diskon 10%.</p>
+            </div>
+
+            <!-- Paket 2 -->
+            <div class="catalog-card">
+                <h3>Paket Kreator Menengah</h3>
+                <p>Pilihan untuk menjangkau lebih banyak calon pelanggan melalui konten menarik.</p>
+                <ul>
+                    <li>Promosi oleh kreator tingkat menengah</li>
+                    <li>Konsep konten lebih terarah</li>
+                    <li>Cocok untuk meningkatkan jangkauan promosi</li>
+                </ul>
+                <p class="price">Rp300.000 / unggahan</p>
+                <p class="promo-info">Gunakan kode <strong>LOKAL10</strong> untuk diskon 10%.</p>
+            </div>
+
+            <!-- Paket 3 -->
+            <div class="catalog-card">
+                <h3>Paket Kampanye Gabungan</h3>
+                <p>Paket promosi terpadu untuk menjalankan kampanye dengan jangkauan luas.</p>
+                <ul>
+                    <li>Kolaborasi dengan beberapa kreator</li>
+                    <li>Konsep kampanye yang lebih beragam</li>
+                    <li>Cocok untuk peluncuran produk atau promosi khusus</li>
+                </ul>
+                <p class="price">Rp500.000 / unggahan</p>
+                <p class="promo-info">Gunakan kode <strong>LOKAL10</strong> untuk diskon 10%.</p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="calc-section" data-role="SE">
+        <div class="calc-container">
+            <h2>Simulasi Biaya Promosi</h2>
+            <p>Hitung estimasi biaya promosi berdasarkan pilihan paket dan jumlah unggahan konten.</p>
+            
+            <div class="form-group">
+                <label for="paket-layanan">Pilih Paket Layanan:</label>
+                <select id="paket-layanan">
+                    <option value="150000">Paket Kreator Pemula (Rp150.000)</option>
+                    <option value="300000">Paket Kreator Menengah (Rp300.000)</option>
+                    <option value="500000">Paket Kampanye Gabungan (Rp500.000)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="jumlah-unggahan">Jumlah Unggahan Konten:</label>
+                <input type="number" id="jumlah-unggahan" min="1" value="1" placeholder="Masukkan jumlah unggahan">
+            </div>
+
+            <div class="form-group">
+                <label for="kode-promo">Kode Promo (Opsional):</label>
+                <input type="text" id="kode-promo" placeholder="Contoh: LOKAL10">
+            </div>
+
+            <button type="button" id="btn-hitung" onclick="hitungTotal()">Hitung Biaya</button>
+
+            <!-- Elemen ini untuk menampilkan hasil dari script.js -->
+            <div id="hasil-perhitungan" style="margin-top: 20px; display: none;">
+                <h3>Rincian Biaya:</h3>
+                <p>Harga Awal: <span id="harga-awal">Rp0</span></p>
+                <p>Potongan Diskon: <span id="potongan-diskon">Rp0</span></p>
+                <h4>Total Bayar Akhir: <span id="total-bayar">Rp0</span></h4>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer id="footer-section" data-role="CEO">
+        <p>Kelas WebDev B - Kelompok 5 (Platform Promosi Kreator Konten)</p>
+        <p>Anggota Tim:<br><br> Muhammad Raihan Akbar (CEO) <br>Atika Nurwulandari (Product Manager)<br>Nahya Sakira (UI/UX Designer)<br>Muhammad Rafi Maulana (UI/UX Designer)<br>Brava Dimas Athallah (Software Engineer)<br>Nadira Azzahra (Software Engineer)</p>
+        <p>&copy; 2026 LokalReach. Hak Cipta Dilindungi.</p>
+    </footer>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
